@@ -53,7 +53,10 @@ struct HomeView: View {
             Spacer()
             
             Button(action: {
-                isOnboardingViewActive = true
+                withAnimation {
+                    playSound(sound: "success", type: "m4a")
+                    isOnboardingViewActive = true
+                }
             }) {
                 Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
                     .imageScale(.large)
