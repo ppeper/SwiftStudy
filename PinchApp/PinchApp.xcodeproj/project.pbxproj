@@ -12,6 +12,7 @@
 		1BB113E32C05B0F9005F252F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB113E22C05B0F9005F252F /* Assets.xcassets */; };
 		1BB113E62C05B0F9005F252F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB113E52C05B0F9005F252F /* Preview Assets.xcassets */; };
 		1BB113F12C05C199005F252F /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB113F02C05C199005F252F /* InfoPanelView.swift */; };
+		1BB113F32C05C500005F252F /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB113F22C05C500005F252F /* ControlImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		1BB113E22C05B0F9005F252F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BB113E52C05B0F9005F252F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BB113F02C05C199005F252F /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		1BB113F22C05C500005F252F /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				1BB113F02C05C199005F252F /* InfoPanelView.swift */,
+				1BB113F22C05C500005F252F /* ControlImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB113F32C05C500005F252F /* ControlImageView.swift in Sources */,
 				1BB113E12C05B0F8005F252F /* ContentView.swift in Sources */,
 				1BB113DF2C05B0F8005F252F /* PinchAppApp.swift in Sources */,
 				1BB113F12C05C199005F252F /* InfoPanelView.swift in Sources */,
