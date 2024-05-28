@@ -11,6 +11,7 @@ struct ContentView: View {
     // MARK: - PROPERTIES
     
     var fruits: [Fruit] = fruitsData
+    @State private var isShowingSettings: Bool = false
     
     // MARK: - BODY
     
@@ -27,6 +28,17 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Fruits")
+            .navigationBarItems(
+                trailing:
+                    Button {
+                        isShowingSettings = true
+                    } label: {
+                        Image(systemName: "slider.horizontal.3")
+                    } //: BUTTON
+                    .sheet(isPresented: $isShowingSettings) {
+                        SettingsView()
+                    }
+            )
         } //: NAVIGATION
     }
 }
