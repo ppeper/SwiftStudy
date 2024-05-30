@@ -14,17 +14,25 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: 0) {
                 NavigationBarView()
                     .padding()
                     .background(Color.white)
                     .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(0.05), radius: 5, x: 0, y: 5)
                 Spacer()
                 
-                FooterView()
-                    .padding(.horizontal)
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(spacing: 0) {
+                        FeaturedTabView()
+                            .padding(.vertical)
+                            .frame(height: UIScreen.main.bounds.width / 1.475)
+                        
+                        FooterView()
+                            .padding(.horizontal)
+                    } //: VSTACK
+                } //: SCROLL
             } //: VSTACK
-            .background(colorBackground)
+            .background(colorBackground.ignoresSafeArea(.all, edges: .all))
         } //: ZSTACK
     }
 }
