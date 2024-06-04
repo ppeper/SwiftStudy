@@ -25,6 +25,9 @@
 		1B5F9B542C0EFDD600FC7DB4 /* RecipeRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F9B532C0EFDD600FC7DB4 /* RecipeRatingView.swift */; };
 		1B5F9B562C0EFE6200FC7DB4 /* RecipeCookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F9B552C0EFE6200FC7DB4 /* RecipeCookingView.swift */; };
 		1B5F9B582C0F063000FC7DB4 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F9B572C0F063000FC7DB4 /* RecipeDetailView.swift */; };
+		1B5F9B5A2C0F0AF600FC7DB4 /* RipeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F9B592C0F0AF600FC7DB4 /* RipeningView.swift */; };
+		1B5F9B5C2C0F0EE800FC7DB4 /* RipeningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F9B5B2C0F0EE800FC7DB4 /* RipeningModel.swift */; };
+		1B5F9B5E2C0F0F1A00FC7DB4 /* RipeningData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F9B5D2C0F0F1A00FC7DB4 /* RipeningData.swift */; };
 		1B72D5552C0EC3B900AA2CCD /* AvocadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B72D5542C0EC3B900AA2CCD /* AvocadosApp.swift */; };
 		1B72D5572C0EC3B900AA2CCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B72D5562C0EC3B900AA2CCD /* ContentView.swift */; };
 		1B72D5592C0EC3BC00AA2CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B72D5582C0EC3BC00AA2CCD /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		1B5F9B532C0EFDD600FC7DB4 /* RecipeRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRatingView.swift; sourceTree = "<group>"; };
 		1B5F9B552C0EFE6200FC7DB4 /* RecipeCookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCookingView.swift; sourceTree = "<group>"; };
 		1B5F9B572C0F063000FC7DB4 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		1B5F9B592C0F0AF600FC7DB4 /* RipeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningView.swift; sourceTree = "<group>"; };
+		1B5F9B5B2C0F0EE800FC7DB4 /* RipeningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningModel.swift; sourceTree = "<group>"; };
+		1B5F9B5D2C0F0F1A00FC7DB4 /* RipeningData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningData.swift; sourceTree = "<group>"; };
 		1B72D5512C0EC3B900AA2CCD /* Avocados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B72D5542C0EC3B900AA2CCD /* AvocadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosApp.swift; sourceTree = "<group>"; };
 		1B72D5562C0EC3B900AA2CCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 				1B5F9B412C0EED3600FC7DB4 /* HeaderModel.swift */,
 				1B5F9B492C0EF84500FC7DB4 /* FactModel.swift */,
 				1B5F9B4D2C0EF96000FC7DB4 /* RecipeModel.swift */,
+				1B5F9B5B2C0F0EE800FC7DB4 /* RipeningModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,6 +91,7 @@
 				1B5F9B432C0EED6300FC7DB4 /* HeaderData.swift */,
 				1B5F9B4B2C0EF86C00FC7DB4 /* FactData.swift */,
 				1B5F9B4F2C0EF99D00FC7DB4 /* RecipeData.swift */,
+				1B5F9B5D2C0F0F1A00FC7DB4 /* RipeningData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 				1B5F9B532C0EFDD600FC7DB4 /* RecipeRatingView.swift */,
 				1B5F9B552C0EFE6200FC7DB4 /* RecipeCookingView.swift */,
 				1B5F9B572C0F063000FC7DB4 /* RecipeDetailView.swift */,
+				1B5F9B592C0F0AF600FC7DB4 /* RipeningView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,8 +227,10 @@
 			files = (
 				1B5F9B3C2C0ED81300FC7DB4 /* SettingsView.swift in Sources */,
 				1B5F9B542C0EFDD600FC7DB4 /* RecipeRatingView.swift in Sources */,
+				1B5F9B5C2C0F0EE800FC7DB4 /* RipeningModel.swift in Sources */,
 				1B72D5572C0EC3B900AA2CCD /* ContentView.swift in Sources */,
 				1B5F9B3E2C0ED82100FC7DB4 /* AppView.swift in Sources */,
+				1B5F9B5E2C0F0F1A00FC7DB4 /* RipeningData.swift in Sources */,
 				1B5F9B3A2C0ED80D00FC7DB4 /* RipeningStagesView.swift in Sources */,
 				1B72D5552C0EC3B900AA2CCD /* AvocadosApp.swift in Sources */,
 				1B5F9B382C0ED80000FC7DB4 /* AvocadosView.swift in Sources */,
@@ -228,6 +239,7 @@
 				1B5F9B442C0EED6300FC7DB4 /* HeaderData.swift in Sources */,
 				1B5F9B462C0EEEB200FC7DB4 /* DishesView.swift in Sources */,
 				1B5F9B562C0EFE6200FC7DB4 /* RecipeCookingView.swift in Sources */,
+				1B5F9B5A2C0F0AF600FC7DB4 /* RipeningView.swift in Sources */,
 				1B5F9B4A2C0EF84500FC7DB4 /* FactModel.swift in Sources */,
 				1B5F9B482C0EF3A400FC7DB4 /* FactsView.swift in Sources */,
 				1B5F9B522C0EF9D700FC7DB4 /* RecipeCardView.swift in Sources */,
