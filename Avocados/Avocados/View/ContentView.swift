@@ -68,6 +68,7 @@ struct ContentView: View {
                 }
                 .frame(maxWidth: 640)
                 .padding(.horizontal)
+                
                 // MARK: - FOOTER
                 
                 VStack(alignment: .center, spacing: 20) {

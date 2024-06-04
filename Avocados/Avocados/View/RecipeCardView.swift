@@ -11,6 +11,7 @@ struct RecipeCardView: View {
     // MARK: - PROPERTIES
     
     var recipe: Recipe
+    @State private var showModel: Bool = false
     
     // MARK: - BODY
     
@@ -48,30 +49,9 @@ struct RecipeCardView: View {
                     .foregroundColor(Color.gray)
                     .italic()
                 
-                HStack(alignment: .center, spacing: 5) {
-                    ForEach(1...(recipe.rating), id: \.self) { item in
-                        Image(systemName: "star.fill")
-                            .font(.body)
-                        .foregroundColor(Color.yellow)
-                    }
-                } //: HSTACK
+                RecipeRatingView(recipe: recipe)
                 
-                HStack(alignment: .center, spacing: 12) {
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "person.2")
-                        Text("Serves: \(recipe.serves)")
-                    }
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "clock")
-                        Text("Prep: \(recipe.preparation)")
-                    }
-                    HStack(alignment: .center, spacing: 2) {
-                        Image(systemName: "flame")
-                        Text("Cooking: \(recipe.cooking)")
-                    }
-                }
-                .font(.footnote)
-                .foregroundColor(Color.gray)
+                RecipeCookingView(recipe: recipe)
             } //: VSTACK
             .padding()
             .padding(.bottom, 12)
@@ -79,6 +59,12 @@ struct RecipeCardView: View {
         .background(Color.white)
         .cornerRadius(12)
         .shadow(color: Color("ColorBlackTransparentLight") ,radius: 8, x: 0, y: 0)
+        .onTapGesture {
+            showModel = true
+        }
+        .sheet(isPresented: $showModel) {
+            RecipeDetailView(recipe: recipe)
+        }
     }
 }
 
