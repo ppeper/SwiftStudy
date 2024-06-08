@@ -18,6 +18,8 @@
 		1B3D6BBC2C1303DA00AA8F2F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D6BBB2C1303DA00AA8F2F /* InfoView.swift */; };
 		1B3D6BBF2C13044200AA8F2F /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D6BBE2C13044200AA8F2F /* TitleModifier.swift */; };
 		1B3D6BC12C13053F00AA8F2F /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D6BC02C13053F00AA8F2F /* ButtonModifier.swift */; };
+		1B3D6BC32C14454500AA8F2F /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D6BC22C14454500AA8F2F /* SymbolModifier.swift */; };
+		1B3D6BC62C14488800AA8F2F /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D6BC52C14488800AA8F2F /* CardTransition.swift */; };
 		1B5F9B982C12BF7100FC7DB4 /* HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F9B972C12BF7100FC7DB4 /* HoneymoonApp.swift */; };
 		1B5F9B9A2C12BF7100FC7DB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F9B992C12BF7100FC7DB4 /* ContentView.swift */; };
 		1B5F9B9C2C12BF7300FC7DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B5F9B9B2C12BF7300FC7DB4 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		1B3D6BBB2C1303DA00AA8F2F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		1B3D6BBE2C13044200AA8F2F /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		1B3D6BC02C13053F00AA8F2F /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		1B3D6BC22C14454500AA8F2F /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
+		1B3D6BC52C14488800AA8F2F /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
 		1B5F9B942C12BF7100FC7DB4 /* Honeymoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeymoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5F9B972C12BF7100FC7DB4 /* HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonApp.swift; sourceTree = "<group>"; };
 		1B5F9B992C12BF7100FC7DB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,8 +105,17 @@
 			children = (
 				1B3D6BBE2C13044200AA8F2F /* TitleModifier.swift */,
 				1B3D6BC02C13053F00AA8F2F /* ButtonModifier.swift */,
+				1B3D6BC22C14454500AA8F2F /* SymbolModifier.swift */,
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		1B3D6BC42C14487800AA8F2F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1B3D6BC52C14488800AA8F2F /* CardTransition.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		1B5F9B8B2C12BF7100FC7DB4 = {
@@ -124,6 +137,7 @@
 		1B5F9B962C12BF7100FC7DB4 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				1B3D6BC42C14487800AA8F2F /* Extension */,
 				1B3D6BBD2C13043800AA8F2F /* Modifier */,
 				1B3D6BB42C12FB2E00AA8F2F /* Component */,
 				1B3D6BA82C12C4B100AA8F2F /* Data */,
@@ -222,6 +236,8 @@
 				1B3D6BBC2C1303DA00AA8F2F /* InfoView.swift in Sources */,
 				1B3D6BB32C12FA6000AA8F2F /* FooterView.swift in Sources */,
 				1B3D6BBF2C13044200AA8F2F /* TitleModifier.swift in Sources */,
+				1B3D6BC62C14488800AA8F2F /* CardTransition.swift in Sources */,
+				1B3D6BC32C14454500AA8F2F /* SymbolModifier.swift in Sources */,
 				1B3D6BB12C12F96900AA8F2F /* HeaderView.swift in Sources */,
 				1B5F9B9A2C12BF7100FC7DB4 /* ContentView.swift in Sources */,
 				1B3D6BC12C13053F00AA8F2F /* ButtonModifier.swift in Sources */,
